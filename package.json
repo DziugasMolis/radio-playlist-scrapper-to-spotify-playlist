@@ -5,6 +5,8 @@
   "private": true,
   "scripts": {
     "scrape": "bun run index.ts",
+    "scrape:m1": "bun run index.ts m1",
+    "scrape:rc": "bun run index.ts rc",
     "spotify:auth": "bun run spotify-auth.ts"
   },
   "devDependencies": {

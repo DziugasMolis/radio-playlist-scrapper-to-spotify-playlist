@@ -12,10 +12,27 @@ To run:
 bun run index.ts
 ```
 
+To run a single station:
+
+```bash
+bun run scrape:m1
+bun run scrape:rc
+```
+
 To scrape the M-1 playlist page as JSON:
 
 ```bash
 bun run scrape
+```
+
+Cron examples:
+
+```cron
+# M-1 four times per day (every 6 hours)
+0 */6 * * * cd /path/to/radio-scrapper && bun run scrape:m1
+
+# RC every 10 minutes
+*/10 * * * * cd /path/to/radio-scrapper && bun run scrape:rc
 ```
 
 The scraper writes output to `songs.json` by default.
@@ -41,6 +58,7 @@ SPOTIFY_REFRESH_TOKEN=spotify_refresh_token_with_playlist_modify_scope
 SPOTIFY_PLAYLIST_ID_M1=spotify_playlist_id
 SPOTIFY_PLAYLIST_ID_RC=spotify_playlist_id
 SPOTIFY_REQUESTS_PER_MINUTE=60
+SPOTIFY_SKIPPED_SONGS_OUTPUT=file
 ```
 
 When `DATABASE_URL` is set, the scraper will:
@@ -62,6 +80,8 @@ Spotify notes:
 - The refresh token must belong to a Spotify user who can edit the target playlist
 - The token must have playlist modification scope, such as playlist-modify-private or playlist-modify-public
 - Spotify requests are paced to 60 requests per minute by default; override with `SPOTIFY_REQUESTS_PER_MINUTE` if you need a lower rate
+- Skipped Spotify matches use `SPOTIFY_SKIPPED_SONGS_OUTPUT` with one of: `file`, `console`, `none`
+- `file` writes `*.spotify-not-found.json`, `console` prints the payload, `none` suppresses skipped-song output
 - Playlists are cleared and refilled through Spotify item pagination, with delete/add batches of up to 100 items per request
 - Songs that are not found on Spotify are skipped
 - If Spotify returns 403, rerun `bun run spotify:auth` after updating scopes, then replace the refresh token in `.env`
