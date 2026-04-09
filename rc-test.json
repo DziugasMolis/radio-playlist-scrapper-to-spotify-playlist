@@ -1,0 +1,61 @@
+{
+  "source": "https://rc.lt/api/songs?page=1",
+  "count": 5,
+  "songs": [
+    {
+      "radioStation": "RC",
+      "time": "15:53",
+      "pageDate": "2026-04-07",
+      "title": "STUMBLIN' IN",
+      "artist": "CYRIL",
+      "playCount": 1,
+      "spotifyArtistName": "",
+      "spotifyTrackName": "",
+      "spotifyUri": ""
+    },
+    {
+      "radioStation": "RC",
+      "time": "15:48",
+      "pageDate": "2026-04-07",
+      "title": "ROAR",
+      "artist": "KATY PERRY",
+      "playCount": 1,
+      "spotifyArtistName": "",
+      "spotifyTrackName": "",
+      "spotifyUri": ""
+    },
+    {
+      "radioStation": "RC",
+      "time": "15:45",
+      "pageDate": "2026-04-07",
+      "title": "BY YOUR SIDE (IN MY MIND)",
+      "artist": "LEONY",
+      "playCount": 1,
+      "spotifyArtistName": "",
+      "spotifyTrackName": "",
+      "spotifyUri": ""
+    },
+    {
+      "radioStation": "RC",
+      "time": "15:41",
+      "pageDate": "2026-04-07",
+      "title": "ČEMPIONAI",
+      "artist": "EVGENYA REDKO",
+      "playCount": 1,
+      "spotifyArtistName": "",
+      "spotifyTrackName": "",
+      "spotifyUri": ""
+    },
+    {
+      "radioStation": "RC",
+      "time": "15:37",
+      "pageDate": "2026-04-07",
+      "title": "WHERE IS MY HUSBAND!",
+      "artist": "RAYE",
+      "playCount": 1,
+      "spotifyArtistName": "",
+      "spotifyTrackName": "",
+      "spotifyUri": ""
+    }
+  ]
+}

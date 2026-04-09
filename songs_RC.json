@@ -1,0 +1,94 @@
+{
+  "source": "https://rc.lt/api/songs?page=1",
+  "count": 8,
+  "songs": [
+    {
+      "radioStation": "RC",
+      "time": "22:03",
+      "pageDate": "2026-04-09",
+      "title": "ALL OF ME (TIESTO RMX)",
+      "artist": "TIESTO",
+      "playCount": 1,
+      "spotifyArtistName": "",
+      "spotifyTrackName": "",
+      "spotifyUri": ""
+    },
+    {
+      "radioStation": "RC",
+      "time": "22:00",
+      "pageDate": "2026-04-09",
+      "title": "SORRY",
+      "artist": "JUSTIN BIEBER",
+      "playCount": 1,
+      "spotifyArtistName": "",
+      "spotifyTrackName": "",
+      "spotifyUri": ""
+    },
+    {
+      "radioStation": "RC",
+      "time": "21:57",
+      "pageDate": "2026-04-09",
+      "title": "POLAROID",
+      "artist": "JONAS BLUE, LIAM PAYNE, LENNON STELLA",
+      "playCount": 1,
+      "spotifyArtistName": "",
+      "spotifyTrackName": "",
+      "spotifyUri": ""
+    },
+    {
+      "radioStation": "RC",
+      "time": "21:54",
+      "pageDate": "2026-04-09",
+      "title": "NEW RELIGION",
+      "artist": "BEBE REXHA, FAITHLESS",
+      "playCount": 1,
+      "spotifyArtistName": "",
+      "spotifyTrackName": "",
+      "spotifyUri": ""
+    },
+    {
+      "radioStation": "RC",
+      "time": "21:50",
+      "pageDate": "2026-04-09",
+      "title": "SHAPE OF YOU",
+      "artist": "ED SHEERAN",
+      "playCount": 1,
+      "spotifyArtistName": "",
+      "spotifyTrackName": "",
+      "spotifyUri": ""
+    },
+    {
+      "radioStation": "RC",
+      "time": "21:47",
+      "pageDate": "2026-04-09",
+      "title": "LA LA LA",
+      "artist": "NAUGHTY BOY, SAM SMITH",
+      "playCount": 1,
+      "spotifyArtistName": "",
+      "spotifyTrackName": "",
+      "spotifyUri": ""
+    },
+    {
+      "radioStation": "RC",
+      "time": "21:43",
+      "pageDate": "2026-04-09",
+      "title": "OPALITE",
+      "artist": "TAYLOR SWIFT",
+      "playCount": 1,
+      "spotifyArtistName": "",
+      "spotifyTrackName": "",
+      "spotifyUri": ""
+    },
+    {
+      "radioStation": "RC",
+      "time": "21:40",
+      "pageDate": "2026-04-09",
+      "title": "HYPNOTIZED",
+      "artist": "ANYMA, ELLIE GOULDING",
+      "playCount": 1,
+      "spotifyArtistName": "",
+      "spotifyTrackName": "",
+      "spotifyUri": ""
+    }
+  ]
+}

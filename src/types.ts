@@ -1,3 +1,5 @@
+export type RadioStationId = "m1" | "rc";
+
 export type SongInfo = {
 	radioStation: string;
 	time: string;
@@ -5,16 +7,22 @@ export type SongInfo = {
 	title: string;
 	artist: string;
 	playCount: number;
-};
-
-export type CliOptions = {
-	page: number;
-	limit: number | null;
-	output: string;
+	spotifyUri: string;
+	spotifyTrackName: string;
+	spotifyArtistName: string;
 };
 
 export type ScrapePayload = {
 	source: string;
 	count: number;
+	songs: SongInfo[];
+};
+
+export type SpotifySkippedSongsPayload = {
+	playlistId: string;
+	station: string;
+	requestedSongs: number;
+	matchedSongs: number;
+	skippedCount: number;
 	songs: SongInfo[];
 };

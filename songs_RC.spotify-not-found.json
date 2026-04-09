@@ -1,0 +1,31 @@
+{
+  "playlistId": "2HNyl6xTUaloZurz6kaM5f",
+  "station": "RC",
+  "requestedSongs": 32,
+  "matchedSongs": 30,
+  "skippedCount": 2,
+  "songs": [
+    {
+      "radioStation": "RC",
+      "title": "ALL OF ME (TIESTO RMX)",
+      "artist": "TIESTO",
+      "playCount": 1,
+      "spotifyUri": null,
+      "spotifyTrackName": null,
+      "spotifyArtistName": null,
+      "pageDate": "2026-04-09",
+      "time": "22:03"
+    },
+    {
+      "radioStation": "RC",
+      "title": "1035",
+      "artist": "TIESTO, TATE MCRAE",
+      "playCount": 1,
+      "spotifyUri": null,
+      "spotifyTrackName": null,
+      "spotifyArtistName": null,
+      "pageDate": "2026-04-07",
+      "time": "15:56"
+    }
+  ]
+}

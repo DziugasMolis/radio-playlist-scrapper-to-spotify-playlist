@@ -1,0 +1,53 @@
+{
+  "playlistId": "2OwKj3tUbYwwHcd77RYSlJ",
+  "station": "M1",
+  "requestedSongs": 300,
+  "matchedSongs": 296,
+  "skippedCount": 4,
+  "songs": [
+    {
+      "radioStation": "M1",
+      "title": "Kids",
+      "artist": "FEZZO",
+      "playCount": 2,
+      "spotifyUri": null,
+      "spotifyTrackName": null,
+      "spotifyArtistName": null,
+      "pageDate": "balandžio 9d.",
+      "time": "20:00"
+    },
+    {
+      "radioStation": "M1",
+      "title": "Doctor Pressure",
+      "artist": "MYLO vs. MIAMI SOUND MACHINE",
+      "playCount": 1,
+      "spotifyUri": null,
+      "spotifyTrackName": null,
+      "spotifyArtistName": null,
+      "pageDate": "balandžio 9d.",
+      "time": "04:09"
+    },
+    {
+      "radioStation": "M1",
+      "title": "Kabin Crew & Lisdoonvarna Crew",
+      "artist": "The Spark",
+      "playCount": 1,
+      "spotifyUri": null,
+      "spotifyTrackName": null,
+      "spotifyArtistName": null,
+      "pageDate": "balandžio 9d.",
+      "time": "16:29"
+    },
+    {
+      "radioStation": "M1",
+      "title": "M MMMM- CIA M-1 (mot)",
+      "artist": "!SS",
+      "playCount": 1,
+      "spotifyUri": null,
+      "spotifyTrackName": null,
+      "spotifyArtistName": null,
+      "pageDate": "balandžio 9d.",
+      "time": "17:35"
+    }
+  ]
+}
