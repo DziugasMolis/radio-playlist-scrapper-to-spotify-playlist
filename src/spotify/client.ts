@@ -7,7 +7,7 @@ import type {
 
 const SPOTIFY_ACCOUNTS_URL = "https://accounts.spotify.com/api/token";
 const SPOTIFY_API_BASE_URL = "https://api.spotify.com/v1";
-const SPOTIFY_MAX_RATE_LIMIT_RETRIES = 5;
+const SPOTIFY_MAX_RATE_LIMIT_RETRIES = 1;
 const DEFAULT_SPOTIFY_REQUESTS_PER_MINUTE = 60;
 const SPOTIFY_PLAYLIST_ITEMS_PAGE_SIZE = 100;
 
