@@ -29,20 +29,23 @@ export async function syncSpotifyPlaylist(songs: SongInfo[], playlistId: string)
 			matchedUris.push(song.spotifyUri);
 			continue;
 		}
-
-		const spotifyTrack = await searchSpotifyTrack(client, accessToken, song);
-
-		if (!spotifyTrack) {
+		try {
+			const spotifyTrack = await searchSpotifyTrack(client, accessToken, song);
+			if (!spotifyTrack) {
+				skippedSongs.push(song);
+				continue;
+			} 
+			matchedUris.push(spotifyTrack.uri);
+			await updateSongSpotifyUri(song, {
+				spotifyUri: spotifyTrack.uri,
+				spotifyTrackName: spotifyTrack.name,
+				spotifyArtistName: spotifyTrack.artistNames.join(", "),
+			});
+		} catch (error) {
+			console.error(`Error searching Spotify for song "${song.title}" by "${song.artist}":`, error);
 			skippedSongs.push(song);
 			continue;
 		}
-
-		matchedUris.push(spotifyTrack.uri);
-		await updateSongSpotifyUri(song, {
-			spotifyUri: spotifyTrack.uri,
-			spotifyTrackName: spotifyTrack.name,
-			spotifyArtistName: spotifyTrack.artistNames.join(", "),
-		});
 	}
 
 	await client.replacePlaylistTracks(accessToken, playlistId, matchedUris);
