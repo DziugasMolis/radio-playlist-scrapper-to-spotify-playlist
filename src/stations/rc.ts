@@ -30,6 +30,10 @@ type RcRequestTimestamp = {
 export class RCRadioStationScraper extends RadioStationScraper {
 	public readonly radioStation = "RC";
 	public readonly playlistId = Bun.env.SPOTIFY_PLAYLIST_ID_RC?.trim() ?? "";
+	protected override readonly allowedPlayedTimeRange = {
+		start: "06:00:00",
+		end: "22:00:00",
+	};
 
 	public buildPlaylistUrl(page: number): string {
 		return `${RC_API_BASE_URL}?page=${page}`;

@@ -9,6 +9,10 @@ const PLAYLIST_URL = `${BASE_URL}/grojarastis/`;
 export class M1RadioStationScraper extends RadioStationScraper {
 	radioStation = "M1";
 	playlistId = Bun.env.SPOTIFY_PLAYLIST_ID_M1?.trim() ?? "";
+	protected override readonly allowedPlayedTimeRange = {
+		start: "06:00:00",
+		end: "22:00:00",
+	};
 
 	public buildPlaylistUrl(page: number): string {
 		if (page <= 1) {
